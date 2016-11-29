@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace project_1
 {
     public partial class Form1 : Form
@@ -22,15 +23,30 @@ namespace project_1
             string L_name = textBox1.Text;
             string F_name = textBox2.Text;
 
-            if (L_name.Length > 6)
+            if (check_alphabet.lower_alphabet(L_name) == true || check_alphabet.lower_alphabet(F_name) == true)
             {
-                label3.Text = "苗字は5文字以下までです。";
+                check_alphabet.ErrMsg("小文字の英数字を含んでいます。");
+                return;
+            }
+            else if (check_alphabet.upper_alphabet(L_name) == true || check_alphabet.upper_alphabet(F_name) == true)
+            {
+                check_alphabet.ErrMsg("大文字の英数字を含んでいます。");
+                return;
+            }
+            else if (check_alphabet.both_alphabet(L_name) == true || check_alphabet.both_alphabet(F_name) == true)
+            {
+                check_alphabet.ErrMsg("英数字を含んでいます。");
+                return;
+            }
+            if (L_name.Length > 5)
+            {
+                check_alphabet.ErrMsg("苗字は5文字以下までです。");
                 return;
             }
 
-            if (F_name.Length > 6)
+            if (F_name.Length > 5)
             {
-                label3.Text = "名前は5文字以下までです。";
+                check_alphabet.ErrMsg("名前は5文字以下までです。");
                 return;
             }
 
@@ -38,4 +54,7 @@ namespace project_1
 
         }
     }
+    
 }
+
+public class check_alphabet { };

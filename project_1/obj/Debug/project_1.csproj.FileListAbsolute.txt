@@ -1,9 +1,9 @@
 C:\project\project_1\project_1\bin\Debug\project_1.exe.config
 C:\project\project_1\project_1\obj\Debug\project_1.csprojResolveAssemblyReference.cache
-C:\project\project_1\project_1\obj\Debug\project_1.Form1.resources
 C:\project\project_1\project_1\obj\Debug\project_1.Properties.Resources.resources
 C:\project\project_1\project_1\obj\Debug\project_1.csproj.GenerateResource.Cache
 C:\project\project_1\project_1\bin\Debug\project_1.exe
 C:\project\project_1\project_1\bin\Debug\project_1.pdb
 C:\project\project_1\project_1\obj\Debug\project_1.exe
 C:\project\project_1\project_1\obj\Debug\project_1.pdb
+C:\project\project_1\project_1\obj\Debug\project_1.Form1.resources
