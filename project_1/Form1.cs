@@ -51,6 +51,11 @@ namespace project_1
             }
 
             label3.Text = L_name + " " + F_name;
+            label5.Text = maskedTextBox1.Text;
+        }
+
+        private void textBox3_TextChanged(object sender, EventArgs e)
+        {
 
         }
     }
@@ -58,3 +63,4 @@ namespace project_1
 }
 
 public class check_alphabet { };
+//public class 
