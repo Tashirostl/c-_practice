@@ -23,30 +23,30 @@ namespace project_1
             string L_name = textBox1.Text;
             string F_name = textBox2.Text;
 
-            if (check_alphabet.lower_alphabet(L_name) == true || check_alphabet.lower_alphabet(F_name) == true)
+            if (CheckAlphabet.LowerAlphabet(L_name) == true || CheckAlphabet.LowerAlphabet(F_name) == true)
             {
-                check_alphabet.ErrMsg("小文字の英数字を含んでいます。");
+                CheckAlphabet.ErrMsg("小文字の英数字を含んでいます。");
                 return;
             }
-            else if (check_alphabet.upper_alphabet(L_name) == true || check_alphabet.upper_alphabet(F_name) == true)
+            else if (CheckAlphabet.UpperAlphabet(L_name) == true || CheckAlphabet.UpperAlphabet(F_name) == true)
             {
-                check_alphabet.ErrMsg("大文字の英数字を含んでいます。");
+                CheckAlphabet.ErrMsg("大文字の英数字を含んでいます。");
                 return;
             }
-            else if (check_alphabet.both_alphabet(L_name) == true || check_alphabet.both_alphabet(F_name) == true)
+            else if (CheckAlphabet.BothAlphabet(L_name) == true || CheckAlphabet.BothAlphabet(F_name) == true)
             {
-                check_alphabet.ErrMsg("英数字を含んでいます。");
+                CheckAlphabet.ErrMsg("英数字を含んでいます。");
                 return;
             }
             if (L_name.Length > 5)
             {
-                check_alphabet.ErrMsg("苗字は5文字以下までです。");
+                CheckAlphabet.ErrMsg("苗字は5文字以下までです。");
                 return;
             }
 
             if (F_name.Length > 5)
             {
-                check_alphabet.ErrMsg("名前は5文字以下までです。");
+                CheckAlphabet.ErrMsg("名前は5文字以下までです。");
                 return;
             }
 
@@ -62,5 +62,5 @@ namespace project_1
     
 }
 
-public class check_alphabet { };
+public class CheckAlphabet { };
 //public class 

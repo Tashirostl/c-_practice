@@ -16,74 +16,89 @@ namespace project_1
         {
             InitializeComponent();
         }
-        int value1;
+        float value1;
         int value2;
-        string label_value;
+        int ButtonPushFlag;
+
+        string LabelValue;
 
         private void button1_Click(object sender, EventArgs e)
         {
-            label_value += 1;
-            label1.Text = label_value;
+            LabelValue += 1;
+            label1.Text = LabelValue;
         }
 
         private void button2_Click(object sender, EventArgs e)
         {
-            label_value += 2;
-            label1.Text = label_value;
+            LabelValue += 2;
+            label1.Text = LabelValue;
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            label_value += 3;
-            label1.Text = label_value;
+            LabelValue += 3;
+            label1.Text = LabelValue;
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            label_value += 4;
-            label1.Text = label_value;
+            LabelValue += 4;
+            label1.Text = LabelValue;
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            label_value += 5;
-            label1.Text = label_value;
+            LabelValue += 5;
+            label1.Text = LabelValue;
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            label_value += 6;
-            label1.Text = label_value;
+            LabelValue += 6;
+            label1.Text = LabelValue;
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            label_value += 7;
-            label1.Text = label_value;
+            LabelValue += 7;
+            label1.Text = LabelValue;
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            label_value += 8;
-            label1.Text = label_value;
+            LabelValue += 8;
+            label1.Text = LabelValue;
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            label_value += 9;
-            label1.Text = label_value;
+            LabelValue += 9;
+            label1.Text = LabelValue;
         }
 
         private void button16_Click(object sender, EventArgs e)
         {
-            label_value += 0;
-            label1.Text = label_value;
+            LabelValue += 0;
+            label1.Text = LabelValue;
         }
 
-        private void button17_Click(object sender, EventArgs e)
+        private void PointButton_Click(object sender, EventArgs e)
         {
-            label_value += ".";
-            label1.Text = label_value;
+            LabelValue += ".";
+            label1.Text = LabelValue;
+        }
+
+        private void SumButton_Click(object sender, EventArgs e)
+        {
+            value1 = float.Parse(LabelValue);
+            label1.Text = value1.ToString();
+        }
+
+        private void RESET_Click(object sender, EventArgs e)
+        {
+            value1 = 0;
+            LabelValue = "";
+            label1.Text = LabelValue;
         }
     }
 }

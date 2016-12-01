@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="check_alphabet.cs" />
+    <Compile Include="CheckAlphabet.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

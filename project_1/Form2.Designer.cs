@@ -42,7 +42,7 @@
             this.button12 = new System.Windows.Forms.Button();
             this.button13 = new System.Windows.Forms.Button();
             this.button14 = new System.Windows.Forms.Button();
-            this.button15 = new System.Windows.Forms.Button();
+            this.RESET = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.button16 = new System.Windows.Forms.Button();
             this.button17 = new System.Windows.Forms.Button();
@@ -141,11 +141,12 @@
             // button10
             // 
             this.button10.Location = new System.Drawing.Point(295, 106);
-            this.button10.Name = "button10";
+            this.button10.Name = "SumButton";
             this.button10.Size = new System.Drawing.Size(35, 33);
             this.button10.TabIndex = 9;
             this.button10.Text = "+";
             this.button10.UseVisualStyleBackColor = true;
+            this.button10.Click += new System.EventHandler(this.SumButton_Click);
             // 
             // button11
             // 
@@ -183,14 +184,15 @@
             this.button14.Text = "=";
             this.button14.UseVisualStyleBackColor = true;
             // 
-            // button15
+            // RESET
             // 
-            this.button15.Location = new System.Drawing.Point(295, 221);
-            this.button15.Name = "button15";
-            this.button15.Size = new System.Drawing.Size(76, 33);
-            this.button15.TabIndex = 14;
-            this.button15.Text = "RESET";
-            this.button15.UseVisualStyleBackColor = true;
+            this.RESET.Location = new System.Drawing.Point(295, 221);
+            this.RESET.Name = "RESET";
+            this.RESET.Size = new System.Drawing.Size(76, 33);
+            this.RESET.TabIndex = 14;
+            this.RESET.Text = "RESET";
+            this.RESET.UseVisualStyleBackColor = true;
+            this.RESET.Click += new System.EventHandler(this.RESET_Click);
             // 
             // label1
             // 
@@ -215,12 +217,12 @@
             // button17
             // 
             this.button17.Location = new System.Drawing.Point(230, 221);
-            this.button17.Name = "button17";
+            this.button17.Name = "PointButton";
             this.button17.Size = new System.Drawing.Size(35, 33);
             this.button17.TabIndex = 18;
             this.button17.Text = ".";
             this.button17.UseVisualStyleBackColor = true;
-            this.button17.Click += new System.EventHandler(this.button17_Click);
+            this.button17.Click += new System.EventHandler(this.PointButton_Click);
             // 
             // Form2
             // 
@@ -230,7 +232,7 @@
             this.Controls.Add(this.button17);
             this.Controls.Add(this.button16);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.button15);
+            this.Controls.Add(this.RESET);
             this.Controls.Add(this.button14);
             this.Controls.Add(this.button13);
             this.Controls.Add(this.button12);
@@ -267,7 +269,7 @@
         private System.Windows.Forms.Button button12;
         private System.Windows.Forms.Button button13;
         private System.Windows.Forms.Button button14;
-        private System.Windows.Forms.Button button15;
+        private System.Windows.Forms.Button RESET;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button button16;
         private System.Windows.Forms.Button button17;
