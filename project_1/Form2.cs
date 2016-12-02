@@ -18,7 +18,7 @@ namespace project_1
         }
         float value1;                       //作業用変数
         int OperatorButtonFlag;             //演算子判定用フラグ
-        int ButtonPushFlag;                 //数字ボタン判定用フラグ
+        static int ButtonPushFlag;                 //数字ボタン判定用フラグ
 
         string LabelValue;
 
@@ -140,6 +140,7 @@ namespace project_1
                 {
                     value1 = float.Parse(LabelValue);
                     ButtonPushFlag = 0;
+                    OperatorButtonFlag = 2;
                     return;
                 }
                 value1 -= float.Parse(LabelValue);
@@ -162,6 +163,7 @@ namespace project_1
                 {
                     value1 = float.Parse(LabelValue);
                     ButtonPushFlag = 0;
+                    OperatorButtonFlag = 3;
                     return;
                 }
                 value1 *= float.Parse(LabelValue);
@@ -185,6 +187,7 @@ namespace project_1
                 {
                     value1 = float.Parse(LabelValue);
                     ButtonPushFlag = 0;
+                    OperatorButtonFlag = 4;
                     return;
                 }
                 value1 /= float.Parse(LabelValue);
@@ -200,7 +203,7 @@ namespace project_1
             value1 = 0;
             LabelValue = "";
             label1.Text = LabelValue;
-            ButtonPushFlag = 1;
+            ButtonPushFlag = 0;
             OperatorButtonFlag = 0;
         }
 
@@ -211,18 +214,22 @@ namespace project_1
                 case 1:         //  +演算子
                     value1 += float.Parse(LabelValue);
                     label1.Text = value1.ToString();
+                    ButtonPushFlag = 0;
                     break;
                 case 2:         //  -演算子
                     value1 -= float.Parse(LabelValue);
                     label1.Text = value1.ToString();
+                    ButtonPushFlag = 0;
                     break;
                 case 3:         //  *演算子
                     value1 *= float.Parse(LabelValue);
                     label1.Text = value1.ToString();
+                    ButtonPushFlag = 0;
                     break;
                 case 4:         //  /演算子
                     value1 /= float.Parse(LabelValue);
                     label1.Text = value1.ToString();
+                    ButtonPushFlag = 0;
                     break;
                 default:
                     break;
